@@ -1,0 +1,29 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "react library with typescript 演示项目",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "laqudee",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
